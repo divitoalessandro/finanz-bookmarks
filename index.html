@@ -1,27 +1,55 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Persönliche Finanzen Schweiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main>
-    <hgroup>
-      <h1>Persönliche Finanzen Schweiz</h1>
-      <p>Kuratierte Ressourcen, Tools und Begriffe für junge Schweizer:innen.</p>
-    </hgroup>
 
-    <ul>
-      <li><a href="resources.html">Ressourcen</a></li>
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="glossary.html">Glossar</a></li>
-    </ul>
+<body>
+  <header class="site-header">
+    <h1>Kuratierte Finanzlinks</h1>
+    <p class="lede">Für CH empfohlene Informations- und Investitionsressourcen. Fehlt dir etwas? Einfach fragen.</p>
+  </header>
+
+  <main>
+    <nav class="index" aria-label="Hauptbereiche">
+      <ol>
+        <li>
+          <a href="resources.html">
+            <span class="num">I</span>
+            <span class="label">Ressourcen</span>
+            <span class="desc">Hilfreiche Blogs, Foren, Podcasts und YouTube-Kanäle.</span>
+          </a>
+        </li>
+        <li>
+          <a href="tools.html">
+            <span class="num">II</span>
+            <span class="label">Tools</span>
+            <span class="desc">Nützliche Tools, Broker, Anlagelösungen und Analyse-Plattformen.</span>
+          </a>
+        </li>
+        <li>
+          <a href="glossary.html">
+            <span class="num">III</span>
+            <span class="label">Glossar</span>
+            <span class="desc">Erste einfache Erklärungen zu Begriffe rund um Vorsorge, Steuern und Anlage.</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
   </main>
 
-  <footer>
-    <small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small>
+  <footer class="site-footer">
+    <p><small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small></p>
   </footer>
 </body>
+
 </html>

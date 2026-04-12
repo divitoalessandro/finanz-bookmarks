@@ -1,16 +1,37 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ressourcen — Persönliche Finanzen Schweiz</title>
+  <title>Ressourcen — Empfehlungen für Einsteiger und Fortgeschrittene</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <p><a href="index.html">← Start</a></p>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="resources.html" aria-current="page">Ressourcen</a>
+      <a href="tools.html">Tools</a>
+      <a href="glossary.html">Glossar</a>
+    </nav>
+
+    <p class="eyebrow">Kapitel I · Lesen und Hören</p>
     <h1>Ressourcen</h1>
-    <p>Blogs, Podcasts und YouTube-Kanäle zu persönlichen Finanzen in der Schweiz.</p>
+    <p class="lede">Blogs, Foren, Podcasts und YouTube-Kanäle zu Finanzthemen.</p>
+
+    <nav class="section-nav" aria-label="Kategorien">
+      <a href="#blogs">Blogs</a>
+      <a href="#foren">Foren</a>
+      <a href="#podcasts">Podcasts</a>
+      <a href="#youtube">YouTube</a>
+    </nav>
   </header>
 
   <main>
@@ -18,8 +39,37 @@
       <h2>Blogs</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispielblog</a> <small>[Blog]</small></h3>
-        <p>Ein bis zwei Sätze dazu, was der Blog abdeckt und für wen er wertvoll ist.</p>
+        <p class="tag">Schweiz · ETF · FIRE</p>
+        <h3><a href="https://www.mustachianpost.com/de/blog/" target="_blank" rel="noopener noreferrer">Mustachian
+            Post</a></h3>
+        <p>Persönliche Finanzen aus Schweizer Perspektive mit soliden Impulsen zu Säule 3a und ETF-Investieren. Der
+          FIRE- und Frugalismus-Anteil muss nicht jede:n ansprechen — die Anlage-Basics sind aber fundiert.</p>
+      </article>
+
+      <article>
+        <p class="tag">Schweiz · Aktien</p>
+        <h3><a href="https://arvy.ch/lernen/" target="_blank" rel="noopener noreferrer">arvy · Lernen</a></h3>
+        <p>Lesenswerter Artikelbereich mit Hintergrund zu einzelnen Unternehmen und zur aktuellen Marktlage — inhaltlich
+          nahe an klassischer Fundamentalanalyse.</p>
+      </article>
+    </section>
+
+    <section id="foren">
+      <h2>Foren</h2>
+
+      <article>
+        <p class="tag">Deutsch</p>
+        <h3><a href="https://forum.finanzrudel.ch/" target="_blank" rel="noopener noreferrer">Finanzrudel Forum</a></h3>
+        <p>Lebhaftes deutschsprachiges Forum rund um Schweizer Finanzthemen. Fragen und Antworten zu Vorsorge, Steuern
+          und Anlage — getragen vom Sparkojote-Umfeld.</p>
+      </article>
+
+      <article>
+        <p class="tag">Englisch</p>
+        <h3><a href="https://forum.mustachianpost.com/" target="_blank" rel="noopener noreferrer">Mustachian Post
+            Forum</a></h3>
+        <p>Englischsprachiges Pendant zum Finanzrudel. Besonders beliebt bei Expats in der Schweiz, mit fundierten
+          Diskussionen zu ETFs, 3a und Steuern.</p>
       </article>
     </section>
 
@@ -27,8 +77,11 @@
       <h2>Podcasts</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispielpodcast</a> <small>[Podcast]</small></h3>
-        <p>Ein bis zwei Sätze dazu, worüber der Podcast spricht und wie oft neue Folgen erscheinen.</p>
+        <p class="tag">Schweiz · ETF</p>
+        <h3><a href="https://www.finanzfabio.ch/podcasts/" target="_blank" rel="noopener noreferrer">Finanzfabio</a>
+        </h3>
+        <p>Deutschsprachiger Schweizer Finanz-Podcast, auch auf Spotify. Für Einsteiger:innen geeignet, mit klarem Fokus
+          auf ETFs und passives Investieren.</p>
       </article>
     </section>
 
@@ -36,14 +89,64 @@
       <h2>YouTube</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispielkanal</a> <small>[YouTube]</small></h3>
-        <p>Ein bis zwei Sätze dazu, welche Themen der Kanal behandelt.</p>
+        <p class="tag">Aktien</p>
+        <h3><a href="https://www.youtube.com/@maximinvestiert/videos" target="_blank" rel="noopener noreferrer">Maxim
+            Investiert</a></h3>
+        <p>Regelmässige Updates zur Marktlage mit Fokus auf Aktien. Gelegentlich vertiefte Analysen einzelner
+          Unternehmen.</p>
+      </article>
+
+      <article>
+        <p class="tag">Aktien · Interviews</p>
+        <h3><a href="https://www.youtube.com/@mario.lochner/videos" target="_blank" rel="noopener noreferrer">Mario
+            Lochner</a></h3>
+        <p>Jeden Samstag ein Markt-Update. Aktien-Fokus, oft mit Gast-Interviews bekannter Stockpicker.</p>
+      </article>
+
+      <article>
+        <p class="tag">ETF · Deutschland</p>
+        <h3><a href="https://www.youtube.com/@Finanzfluss/videos" target="_blank"
+            rel="noopener noreferrer">Finanzfluss</a></h3>
+        <p>Grosser deutscher Kanal zu ETFs, Marktlage, Investieren und Sparen. Nicht Schweiz-spezifisch, für
+          Einsteiger:innen aber trotzdem sehr hilfreich.</p>
+      </article>
+
+      <article>
+        <p class="tag">Value Investing</p>
+        <h3><a href="https://www.youtube.com/@derAktienprofi/videos" target="_blank" rel="noopener noreferrer">der
+            Aktienprofi</a></h3>
+        <p>Aktien-Fokus mit Value-Investing-Ansatz — die Idee, gezielt unterbewertete Unternehmen zu kaufen und
+          langfristig zu halten.</p>
+      </article>
+
+      <article>
+        <p class="tag">Aktien · Englisch</p>
+        <h3><a href="https://www.youtube.com/@CouchInvestor/videos" target="_blank" rel="noopener noreferrer">Couch
+            Investor</a></h3>
+        <p>Englischsprachiger Kanal, der die aktuelle Marktlage und das eigene Portfolio offen bespricht.</p>
+      </article>
+
+      <article>
+        <p class="tag">Schweiz · Aktien · ETF</p>
+        <h3><a href="https://www.youtube.com/@Sparkojote/videos" target="_blank"
+            rel="noopener noreferrer">Sparkojote</a></h3>
+        <p>Aktien und ETFs mit klarem Schweiz-Fokus. Zeigt sein eigenes Portfolio, kommentiert die Marktlage und
+          betreibt das Finanzrudel-Forum.</p>
+      </article>
+
+      <article>
+        <p class="tag">Aktien · Einzelwerte</p>
+        <h3><a href="https://www.youtube.com/@InvestYoung2022/videos" target="_blank" rel="noopener noreferrer">Invest
+            Young</a></h3>
+        <p>Jüngerer Aktien-Investor, der sein eigenes Portfolio teilt und einzelne Titel bespricht. Mit etwas Vorsicht
+          zu geniessen, als Inspirationsquelle aber durchaus hilfreich.</p>
       </article>
     </section>
   </main>
 
-  <footer>
-    <small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small>
+  <footer class="site-footer">
+    <p><small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small></p>
   </footer>
 </body>
+
 </html>

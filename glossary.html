@@ -1,43 +1,350 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Glossar — Persönliche Finanzen Schweiz</title>
+  <title>Glossar — Begriffe rund um Vorsorge, Steuern und Anlage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <p><a href="index.html">← Start</a></p>
-    <h1>Glossar</h1>
-    <p>Begriffe rund um persönliche Finanzen in der Schweiz, A–Z.</p>
 
-    <nav aria-label="Buchstaben">
-      <a href="#a">A</a> ·
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="resources.html">Ressourcen</a>
+      <a href="tools.html">Tools</a>
+      <a href="glossary.html" aria-current="page">Glossar</a>
+    </nav>
+
+    <p class="eyebrow">Kapitel III · Nachschlagen</p>
+    <h1>Glossar</h1>
+    <p class="lede">Begriffe rund um Vorsorge, Steuern und Anlage für Einsteiger:innen und leicht Fortgeschrittene,
+      kurz und auf Deutsch erklärt.</p>
+
+    <form class="glossary-search" onsubmit="return false">
+      <label class="visually-hidden" for="search">Begriff suchen</label>
+      <input type="search" id="search" placeholder="Begriff suchen …" autocomplete="off" spellcheck="false">
+    </form>
+
+    <nav class="alphabet" aria-label="Buchstaben">
+      <a href="#a">A</a>
       <a href="#b">B</a>
+      <a href="#d">D</a>
+      <a href="#e">E</a>
+      <a href="#f">F</a>
+      <a href="#h">H</a>
+      <a href="#i">I</a>
+      <a href="#k">K</a>
+      <a href="#l">L</a>
+      <a href="#m">M</a>
+      <a href="#o">O</a>
+      <a href="#p">P</a>
+      <a href="#q">Q</a>
+      <a href="#r">R</a>
+      <a href="#s">S</a>
+      <a href="#t">T</a>
+      <a href="#v">V</a>
     </nav>
   </header>
 
   <main>
     <section id="a">
-      <h2>A</h2>
+      <h2 class="letter">A</h2>
       <dl>
         <dt>AHV</dt>
-        <dd>Alters- und Hinterlassenenversicherung — die erste Säule der Schweizer Vorsorge. Finanziert durch Lohnbeiträge und gewährt Renten im Alter sowie an Hinterbliebene.</dd>
+        <dd>Alters- und Hinterlassenenversicherung — die erste Säule der Schweizer Vorsorge. Finanziert durch
+          Lohnbeiträge; zahlt Renten im Alter sowie an Hinterbliebene.</dd>
+
+        <dt>Aktie</dt>
+        <dd>Anteil am Eigenkapital eines Unternehmens. Wer Aktien hält, ist Miteigentümer:in, trägt Kursrisiko und kann
+          an Dividenden sowie Stimmrechten teilhaben.</dd>
+
+        <dt>Anleihe</dt>
+        <dd>Verzinsliches Wertpapier, mit dem Staaten oder Unternehmen Geld aufnehmen. Anleger:innen verleihen Kapital
+          auf Zeit und erhalten dafür regelmässige Zinsen sowie am Laufzeitende den Nennwert zurück.</dd>
       </dl>
     </section>
 
     <section id="b">
-      <h2>B</h2>
+      <h2 class="letter">B</h2>
       <dl>
+        <dt>Börse</dt>
+        <dd>Organisierter Marktplatz für den Handel von Wertpapieren. In der Schweiz ist die SIX Swiss Exchange die
+          wichtigste Börse; dort werden Aktien, ETFs und Anleihen während festgelegter Handelszeiten gehandelt.</dd>
+
+        <dt>Broker</dt>
+        <dd>Finanzdienstleister, der im Auftrag von Anleger:innen Wertpapiere an der Börse kauft und verkauft. In der
+          Schweiz reicht das Spektrum von klassischen Banken über Swissquote und Saxo bis zu internationalen Plattformen
+          wie Interactive Brokers.</dd>
+
         <dt>BVG</dt>
-        <dd>Bundesgesetz über die berufliche Alters-, Hinterlassenen- und Invalidenvorsorge. Regelt die zweite Säule der Schweizer Vorsorge (Pensionskasse).</dd>
+        <dd>Bundesgesetz über die berufliche Alters-, Hinterlassenen- und Invalidenvorsorge. Regelt die zweite Säule,
+          also die Pensionskasse, für unselbständig Erwerbstätige.</dd>
+      </dl>
+    </section>
+
+    <section id="d">
+      <h2 class="letter">D</h2>
+      <dl>
+        <dt>Dividende</dt>
+        <dd>Anteil am Unternehmensgewinn, der an die Aktionär:innen ausgeschüttet wird. In der Schweiz werden Dividenden
+          als Einkommen besteuert — realisierte Kursgewinne hingegen sind für Privatpersonen in der Regel steuerfrei.
+        </dd>
+      </dl>
+    </section>
+
+    <section id="e">
+      <h2 class="letter">E</h2>
+      <dl>
+        <dt>ETF</dt>
+        <dd>Exchange Traded Fund — ein an der Börse handelbarer Indexfonds. Bildet einen Index (z.B. SMI oder MSCI
+          World) möglichst genau ab, hat meist tiefe Gebühren (TER) und kann wie eine Aktie gekauft oder verkauft
+          werden.</dd>
+      </dl>
+    </section>
+
+    <section id="f">
+      <h2 class="letter">F</h2>
+      <dl>
+        <dt>Fonds</dt>
+        <dd>Gemeinschaftsanlage: Anleger:innen zahlen in einen gemeinsamen Topf ein, eine Fondsgesellschaft investiert
+          das Kapital gemäss einer Strategie. Klassische Fonds werden einmal täglich zum Nettoinventarwert gehandelt;
+          ein ETF ist eine Form des Fonds, die laufend an der Börse gehandelt wird, meist passiv einen Index abbildet
+          und dadurch in der Regel günstiger ist als ein aktiv verwalteter Fonds.</dd>
+
+        <dt>Freizügigkeit</dt>
+        <dd>Beim Austritt aus einer Pensionskasse wird das Guthaben der zweiten Säule auf ein Freizügigkeitskonto oder
+          -depot übertragen — etwa bei Selbständigkeit, einem Stellenwechsel ohne sofortigen Anschluss oder einem
+          Auslandaufenthalt.</dd>
+      </dl>
+    </section>
+
+    <section id="h">
+      <h2 class="letter">H</h2>
+      <dl>
+        <dt>Handelszeiten</dt>
+        <dd>Die Zeitfenster, in denen an einer Börse gehandelt werden kann. Die SIX Swiss Exchange ist werktags von
+          09:00 bis 17:30 Uhr (MEZ) geöffnet; US-Börsen handeln von 15:30 bis 22:00 Uhr MEZ (im Sommer eine Stunde
+          früher).</dd>
+      </dl>
+    </section>
+
+    <section id="i">
+      <h2 class="letter">I</h2>
+      <dl>
+        <dt>Index</dt>
+        <dd>Messlatte für einen Markt oder eine Anlageklasse. Ein Index wie der SMI (Schweiz) oder der MSCI World (Welt)
+          fasst die Entwicklung vieler Aktien zu einer einzigen Kennzahl zusammen.</dd>
+
+        <dt>ISIN</dt>
+        <dd>International Securities Identification Number — ein zwölfstelliger Code, der ein Wertpapier weltweit
+          eindeutig identifiziert, etwa eine Aktie, eine Anleihe oder einen ETF.</dd>
+      </dl>
+    </section>
+
+    <section id="k">
+      <h2 class="letter">K</h2>
+      <dl>
+        <dt>Kapitalgewinn</dt>
+        <dd>Unterschied zwischen Kauf- und Verkaufspreis eines Wertpapiers. In der Schweiz sind realisierte Kursgewinne
+          für Privatpersonen auf Wertschriften in der Regel steuerfrei — Dividenden und Zinsen sind es nicht.</dd>
+      </dl>
+    </section>
+
+    <section id="l">
+      <h2 class="letter">L</h2>
+      <dl>
+        <dt>Limit Order</dt>
+        <dd>Kauf- oder Verkaufsauftrag mit einer Preisgrenze: beim Kauf eine Obergrenze, beim Verkauf eine Untergrenze.
+          Wird nur ausgeführt, wenn der Limitpreis erreicht wird — garantiert den Preis, nicht aber die Ausführung.</dd>
+      </dl>
+    </section>
+
+    <section id="m">
+      <h2 class="letter">M</h2>
+      <dl>
+        <dt>Marktorder</dt>
+        <dd>Kauf- oder Verkaufsauftrag, der sofort zum aktuell besten verfügbaren Kurs ausgeführt wird. Garantiert die
+          Ausführung, nicht aber den Preis — bei volatilen oder wenig gehandelten Titeln kann das spürbar teurer werden.
+        </dd>
+      </dl>
+    </section>
+
+    <section id="o">
+      <h2 class="letter">O</h2>
+      <dl>
+        <dt>Optionen</dt>
+        <dd>Derivate, die das Recht (aber nicht die Pflicht) geben, einen Basiswert bis zu einem bestimmten Datum zu
+          einem festgelegten Preis zu kaufen (Call) oder zu verkaufen (Put). Werden für Absicherung, Einkommen oder
+          Spekulation eingesetzt — eher für Fortgeschrittene.</dd>
+      </dl>
+    </section>
+
+    <section id="p">
+      <h2 class="letter">P</h2>
+      <dl>
+        <dt>Pensionskasse</dt>
+        <dd>Vorsorgeeinrichtung der zweiten Säule. Arbeitnehmende und Arbeitgebende zahlen monatlich ein; im Ruhestand
+          gibt es eine Rente, einen Kapitalbezug oder eine Kombination aus beidem.</dd>
+      </dl>
+    </section>
+
+    <section id="q">
+      <h2 class="letter">Q</h2>
+      <dl>
+        <dt>Quellensteuer</dt>
+        <dd>Steuer, die direkt bei der Auszahlung einbehalten wird. Auf ausländische Dividenden erhebt meist das
+          Herkunftsland eine Quellensteuer, die in der Schweizer Steuererklärung teilweise zurückgefordert werden kann
+          (DBA-Rückforderung).</dd>
+      </dl>
+    </section>
+
+    <section id="r">
+      <h2 class="letter">R</h2>
+      <dl>
+        <dt>Rebalancing</dt>
+        <dd>Regelmässiges Wiederherstellen der ursprünglich festgelegten Vermögensaufteilung in einem Portfolio. Steigt
+          ein Teil stärker als der Rest, wird er teilweise verkauft, um die anderen Anlagen nachzukaufen.</dd>
+
+        <dt>Rendite</dt>
+        <dd>Ertrag einer Anlage, meist ausgedrückt in Prozent pro Jahr. Setzt sich typischerweise aus Kursgewinn plus
+          Ausschüttungen (Dividenden, Zinsen) zusammen.</dd>
+      </dl>
+    </section>
+
+    <section id="s">
+      <h2 class="letter">S</h2>
+      <dl>
+        <dt>Säule 1</dt>
+        <dd>Staatliche Vorsorge für Alter, Tod und Invalidität. AHV und IV zusammen decken den Existenzbedarf und sind
+          für alle in der Schweiz wohnhaften Personen obligatorisch.</dd>
+
+        <dt>Säule 2</dt>
+        <dd>Berufliche Vorsorge oder Pensionskasse. Ergänzt die AHV, ist für Arbeitnehmende ab einem Mindestlohn
+          obligatorisch und wird von Arbeitnehmer:in und Arbeitgeber:in gemeinsam finanziert.</dd>
+
+        <dt>Säule 3a</dt>
+        <dd>Steuerbegünstigte, gebundene private Vorsorge. Jährliche Einzahlungen sind bis zu einem vom Bund
+          festgelegten Höchstbetrag vom steuerbaren Einkommen abziehbar; ein Bezug ist grundsätzlich erst fünf Jahre vor
+          AHV-Alter möglich.</dd>
+
+        <dt>Säule 3b</dt>
+        <dd>Frei gestaltete private Ersparnisse und Anlagen. Jederzeit verfügbar, ohne die Steuervorteile der Säule 3a —
+          aber auch ohne deren Einschränkungen beim Bezug.</dd>
+
+        <dt>SMI</dt>
+        <dd>Swiss Market Index — der wichtigste Schweizer Aktienindex. Umfasst die 20 grössten und liquidesten Titel der
+          SIX Swiss Exchange, darunter Nestlé, Roche und Novartis.</dd>
+
+        <dt>Sparplan</dt>
+        <dd>Regelmässige, automatisierte Einzahlung in einen ETF, Fonds oder auf ein Anlagekonto. Glättet Kaufkurse über
+          die Zeit (Cost-Average-Effekt) und diszipliniert das Sparen.</dd>
+      </dl>
+    </section>
+
+    <section id="t">
+      <h2 class="letter">T</h2>
+      <dl>
+        <dt>TER</dt>
+        <dd>Total Expense Ratio — die laufende Gesamtkostenquote eines Fonds oder ETFs in Prozent pro Jahr. Zeigt, wie
+          viel vom Anlagevermögen jährlich für Verwaltung und Betrieb abgeht; bei breit gestreuten ETFs oft unter 0.25
+          %.</dd>
+      </dl>
+    </section>
+
+    <section id="v">
+      <h2 class="letter">V</h2>
+      <dl>
+        <dt>Vermögenssteuer</dt>
+        <dd>Kantonale und kommunale Steuer auf das Nettovermögen per 31. Dezember. Wertpapierdepots, Bankguthaben,
+          Immobilien und mehr zählen dazu; die Sätze variieren stark zwischen den Kantonen.</dd>
+
+        <dt>Verrechnungssteuer</dt>
+        <dd>35 % Bundessteuer auf Zinsen und Dividenden aus Schweizer Quellen. Wird direkt einbehalten und bei korrekter
+          Deklaration in der Steuererklärung wieder gutgeschrieben.</dd>
+
+        <dt>Volatilität</dt>
+        <dd>Mass für die Schwankungsbreite eines Wertpapiers oder Portfolios. Hohe Volatilität bedeutet starke
+          Kursschwankungen — und damit meist sowohl höheres Risiko als auch höheres Chancenpotenzial.</dd>
       </dl>
     </section>
   </main>
 
-  <footer>
-    <small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small>
+  <dialog class="glossary-dialog" id="glossary-dialog" aria-labelledby="dialog-term">
+    <div class="dialog-body">
+      <p class="eyebrow">Begriff</p>
+      <h2 id="dialog-term"></h2>
+      <p id="dialog-def"></p>
+    </div>
+    <form method="dialog">
+      <button class="btn" type="submit">Schliessen</button>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <p><small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small></p>
   </footer>
+
+  <script>
+    (function () {
+      const dialog = document.getElementById("glossary-dialog");
+      const dialogTerm = document.getElementById("dialog-term");
+      const dialogDef = document.getElementById("dialog-def");
+      const search = document.getElementById("search");
+
+      // Transform each <dl> (dt/dd pairs) into a grid of clickable term buttons
+      document.querySelectorAll("main dl").forEach(function (dl) {
+        const grid = document.createElement("div");
+        grid.className = "terms";
+        const kids = Array.from(dl.children);
+        for (let i = 0; i < kids.length; i += 2) {
+          const dt = kids[i];
+          const dd = kids[i + 1];
+          if (!dt || !dd || dt.tagName !== "DT" || dd.tagName !== "DD") continue;
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "term";
+          btn.textContent = dt.textContent;
+          btn.dataset.term = dt.textContent;
+          btn.dataset.def = dd.textContent;
+          btn.addEventListener("click", function () {
+            dialogTerm.textContent = btn.dataset.term;
+            dialogDef.textContent = btn.dataset.def;
+            dialog.showModal();
+          });
+          grid.appendChild(btn);
+        }
+        dl.replaceWith(grid);
+      });
+
+      // Click on backdrop closes the dialog
+      dialog.addEventListener("click", function (e) {
+        if (e.target === dialog) dialog.close();
+      });
+
+      // Simple search filter across all terms
+      function applyFilter() {
+        const q = search.value.trim().toLowerCase();
+        document.querySelectorAll("main > section").forEach(function (section) {
+          let visible = 0;
+          section.querySelectorAll(".term").forEach(function (btn) {
+            const hay = (btn.dataset.term + " " + btn.dataset.def).toLowerCase();
+            const match = !q || hay.indexOf(q) !== -1;
+            btn.hidden = !match;
+            if (match) visible++;
+          });
+          section.hidden = visible === 0;
+        });
+      }
+      search.addEventListener("input", applyFilter);
+    })();
+  </script>
 </body>
+
 </html>

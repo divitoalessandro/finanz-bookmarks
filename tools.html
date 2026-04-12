@@ -1,16 +1,36 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tools — Persönliche Finanzen Schweiz</title>
+  <title>Tools — Nützliche Tools für die Schweiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <p><a href="index.html">← Start</a></p>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="resources.html">Ressourcen</a>
+      <a href="tools.html" aria-current="page">Tools</a>
+      <a href="glossary.html">Glossar</a>
+    </nav>
+
+    <p class="eyebrow">Kapitel II · Anwenden</p>
     <h1>Tools</h1>
-    <p>Ausgewählte externe Rechner, Vergleichsportale, Broker und Apps.</p>
+    <p class="lede">Ausgewählte Rechner, Broker, Anlagelösungen und Analyse-Plattformen.</p>
+
+    <nav class="section-nav" aria-label="Kategorien">
+      <a href="#rechner">Rechner</a>
+      <a href="#broker">Broker &amp; Anlagelösungen</a>
+      <a href="#analyse">Analyse &amp; Tracking</a>
+    </nav>
   </header>
 
   <main>
@@ -18,41 +38,153 @@
       <h2>Rechner</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispiel-Rechner</a> <small>[Gratis]</small></h3>
-        <p>Ein bis zwei Sätze: was der Rechner tut und wofür er sich lohnt.</p>
+        <p class="tag">Gratis</p>
+        <h3><a href="https://arvy.ch/investitionsrechner/" target="_blank" rel="noopener noreferrer">arvy
+            Investitionsrechner</a></h3>
+        <p>Berechnet Erträge und Wertentwicklung einmaliger oder monatlicher Investitionen — mit frei wählbarer Rendite,
+          Laufzeit und Gebühren.</p>
       </article>
-    </section>
-
-    <section id="vergleichsportale">
-      <h2>Vergleichsportale</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispiel-Vergleichsportal</a> <small>[Gratis]</small></h3>
-        <p>Ein bis zwei Sätze: was verglichen wird und wie neutral die Quelle ist.</p>
+        <p class="tag">Gratis</p>
+        <h3><a href="https://viac.ch/produkte/saeule-3a/" target="_blank" rel="noopener noreferrer">VIAC Vorsorgerechner
+            3a</a></h3>
+        <p>Zeigt die potenzielle Wertentwicklung deiner Säule 3a über Jahre und Jahrzehnte, inklusive geschätzter
+          Steuerersparnis.</p>
+      </article>
+
+      <article>
+        <p class="tag">Gratis</p>
+        <h3><a href="https://viac.ch/produkte/invest/" target="_blank" rel="noopener noreferrer">VIAC
+            Sparplanrechner</a></h3>
+        <p>Rechnet monatliche oder einmalige Einzahlungen in ein freies Anlagekonto über frei wählbare Zeiträume hoch.
+        </p>
       </article>
     </section>
 
     <section id="broker">
-      <h2>Broker</h2>
+      <h2>Broker und Anlagelösungen</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispiel-Broker</a> <small>[Kostenpflichtig]</small></h3>
-        <p>Ein bis zwei Sätze: Gebührenmodell, Schweiz-Tauglichkeit, Zielgruppe.</p>
+        <p class="tag">Anlagelösung · Schweiz</p>
+        <h3><a href="https://www.truewealth.ch/de" target="_blank" rel="noopener noreferrer">True Wealth</a></h3>
+        <p>Digitale Vermögensverwaltung für freies Vermögen und Säule 3a. Passiver, ETF-basierter Ansatz mit
+          transparenter Gebührenstruktur.</p>
+      </article>
+
+      <article>
+        <p class="tag">Anlagelösung · Schweiz</p>
+        <h3><a href="https://viac.ch/" target="_blank" rel="noopener noreferrer">VIAC</a></h3>
+        <p>Schweizer App für freies Vermögen, Freizügigkeit und Säule 3a. Günstige ETF-Strategien und volle Kontrolle
+          über die Aufteilung.</p>
+      </article>
+
+      <article>
+        <p class="tag">Broker · Schweiz</p>
+        <h3><a href="https://www.home.saxo/de-ch" target="_blank" rel="noopener noreferrer">Saxo Bank Schweiz</a></h3>
+        <p>Solider Go-To-Broker für die Schweiz. Klarer Vorteil gegenüber vielen Konkurrenten: der gratis Steuerauszug
+          am Jahresende.</p>
+      </article>
+
+      <article>
+        <p class="tag">Broker · Schweiz · Kostenpflichtig</p>
+        <h3><a href="https://www.swissquote.com/de-ch/private" target="_blank" rel="noopener noreferrer">Swissquote</a>
+        </h3>
+        <p>Etablierter Schweizer Broker mit breitem Angebot. Die Gebühren sind im Vergleich zu neueren Anbietern eher
+          hoch geblieben.</p>
+      </article>
+
+      <article>
+        <p class="tag">Broker · International · Fortgeschritten</p>
+        <h3><a href="https://www.interactivebrokers.co.uk/de/home.php" target="_blank"
+            rel="noopener noreferrer">Interactive Brokers</a></h3>
+        <p>Günstige internationale Plattform für aktive Trader:innen. Kein integrierter Schweizer Steuerauszug — eher
+          für Fortgeschrittene geeignet.</p>
       </article>
     </section>
 
-    <section id="apps">
-      <h2>Apps</h2>
+    <section id="analyse">
+      <h2>Analyse und Tracking</h2>
 
       <article>
-        <h3><a href="https://example.ch">Beispiel-App</a> <small>[Gratis]</small></h3>
-        <p>Ein bis zwei Sätze: Was die App macht, auf welchen Plattformen sie läuft.</p>
+        <p class="tag">KI · Markt</p>
+        <h3><a href="https://www.perplexity.ai/finance" target="_blank" rel="noopener noreferrer">Perplexity Finance</a>
+        </h3>
+        <p>KI-gestützte Marktübersicht mit der Möglichkeit, direkt Rückfragen zu stellen. Mit kostenlosem Konto lassen
+          sich auch eigene Watchlisten anlegen.</p>
+      </article>
+
+      <article>
+        <p class="tag">Fundamental · Unternehmen</p>
+        <h3><a href="https://www.qualtrim.com/" target="_blank" rel="noopener noreferrer">Qualtrim</a></h3>
+        <p>Fundamentalanalyse mit Charts, Watchlisten und Earnings-Übersicht. Empfehlenswert, wenn du einzelne
+          Unternehmen über längere Zeit verfolgen möchtest.</p>
+      </article>
+
+      <article>
+        <p class="tag">Charts · Einsteiger bis Profi</p>
+        <h3><a href="https://de.tradingview.com/markets/" target="_blank" rel="noopener noreferrer">TradingView</a></h3>
+        <p>Märkte, ETFs und Aktien verfolgen, technische Chart-Analysen und Watchlisten. Der volle Funktionsumfang ist
+          eher für Fortgeschrittene — für eine erste Watchlist reicht die kostenlose Variante.</p>
+      </article>
+
+      <article>
+        <p class="tag">Aktien · Analyse</p>
+        <h3><a href="https://aktie.traderfox.com/" target="_blank" rel="noopener noreferrer">TraderFox · Aktie</a></h3>
+        <p>Detaillierte Aktienanalysen mit solider Datengrundlage. Die Basisversion ist gratis verfügbar und reicht für
+          regelmässiges Nachschlagen.</p>
+      </article>
+
+      <article>
+        <p class="tag">ETF</p>
+        <h3><a href="https://www.justetf.com/de/" target="_blank" rel="noopener noreferrer">justETF</a></h3>
+        <p>ETF-Suche und Analyseplattform mit Vergleich von TER, Ausschüttungsart, Fondsgrösse und Replikationsmethode.
+        </p>
+      </article>
+
+      <article>
+        <p class="tag">ETF · Schweiz</p>
+        <h3><a href="https://extraetf.com/ch/etf-search" target="_blank" rel="noopener noreferrer">extraETF ·
+            Schweiz</a></h3>
+        <p>ETF-Suche und Analyseplattform mit Schweizer Ausrichtung — in Darstellung und Filtern besser auf
+          CH-Nutzer:innen zugeschnitten als viele Alternativen.</p>
+      </article>
+
+      <article>
+        <p class="tag">Portfolio · Open Source · Gratis</p>
+        <h3><a href="https://www.portfolio-performance.info/" target="_blank" rel="noopener noreferrer">Portfolio
+            Performance</a></h3>
+        <p>Open-Source-Tool zum Tracken des eigenen Portfolios und sämtlicher Buchungen. In der Einrichtung etwas
+          komplexer, dafür vollständig kostenlos und lokal lauffähig.</p>
+      </article>
+
+      <article>
+        <p class="tag">Portfolio · Deutschland</p>
+        <h3><a href="https://parqet.com/de" target="_blank" rel="noopener noreferrer">Parqet</a></h3>
+        <p>Portfolio-Tracker mit Fokus auf den deutschen Markt. Ein Portfolio ist gratis nutzbar; Schweizer Depots
+          lassen sich mit etwas manuellem Handling ebenfalls abbilden.</p>
+      </article>
+
+      <article>
+        <p class="tag">Portfolio · Einfach</p>
+        <h3><a href="https://www.getquin.com/de/" target="_blank" rel="noopener noreferrer">getquin</a></h3>
+        <p>Einfach gehaltener Portfolio-Tracker mit Social-Feed. In der Basisversion gratis nutzbar — gut für den
+          schnellen Überblick.</p>
+      </article>
+
+      <article>
+        <p class="tag">Sentiment · Gratis</p>
+        <h3><a href="https://edition.cnn.com/markets/fear-and-greed" target="_blank" rel="noopener noreferrer">CNN Fear
+            &amp; Greed Index</a></h3>
+        <p>Zeigt, welche Emotion gerade die US-Märkte treibt — von extremer Angst bis zu extremer Gier. Ein nützliches
+          Stimmungsbarometer, keine Handlungsempfehlung.</p>
       </article>
     </section>
   </main>
 
-  <footer>
-    <small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small>
+  <footer class="site-footer">
+    <p><small>Keine Anlageberatung. Alle Angaben ohne Gewähr.</small></p>
   </footer>
 </body>
+
 </html>
